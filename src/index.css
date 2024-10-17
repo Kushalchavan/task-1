@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.nav-bar {
+  width: 100%;
+  height: 5rem;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  & div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    & input {
+      width: 450px;
+      padding: 10px 20px;
+      border-radius: 5px;
+      outline: none;
+      border: none;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+    & button {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      outline: none;
+      border: none;
+      cursor: pointer;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+  }
+}
+
+.main-section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+aside {
+  width: 20%;
+  height: auto;
+  border-right: 1px solid lightgray;
+  & div {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    & button {
+      width: 200px;
+      outline: none;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      cursor: pointer;
+    }
+  }
+}
+
+.main-card-section {
+  width: 100%;
+  padding: 2rem;
+  height: auto;
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  & .card {
+    color: gray;
+    width: 300px;
+    height: 400px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    cursor: pointer;
+    &:hover {
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      transition: all;
+      transition-duration: 3ms;
+    }
+    & img {
+      border-radius: 50%;
+      border: 1px solid lightgray;
+      margin-bottom: 10px;
+    }
+    & .email {
+      font-size: small;
+      margin-top: 10px;
+    }
+    & p {
+      margin-bottom: 10px;
+      color: gray;
+    }
+  }
+
+  & .buttons {
+    margin-top: 2rem;
+    font-size: larger;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.employee-details {
+  margin-top: 2rem;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  & img {
+    border: 1px solid lightgray;
+    border-radius: 50%;
+    margin: 1rem 1rem;
+  }
+  & p {
+    margin-top: 1rem;
+    color: darkgray;
+  }
+}
